@@ -1,13 +1,13 @@
 from .IngestorInterface import IngestorInterface
 from .QuoteModel import QuoteModel
-from .TXTIngestor import TXTIngestor
+from .TextIngestor import TextIngestor
 from .PDFIngestor import PDFIngestor
 from .CSVIngestor import CSVIngestor
 from .DocxIngestor import DocxIngestor
 
 
 class Ingestor(IngestorInterface):
-    ingestors = [TXTIngestor, PDFIngestor, CSVIngestor, DocxIngestor]
+    ingestors = [TextIngestor, PDFIngestor, CSVIngestor, DocxIngestor]
     '''
     The `Ingestor` class in Python provides a method to parse different types
     of files using specific ingestors based on the file type.
